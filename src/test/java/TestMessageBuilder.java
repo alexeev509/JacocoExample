@@ -12,4 +12,20 @@ public class TestMessageBuilder {
 
     }
 
+    @Test
+    public void testNull() {
+
+        MessageBuilder obj = new MessageBuilder();
+        assertEquals("Please provide a name!", obj.getMessage(null));
+
+    }
+
+    @Test
+    public void testTrim() {
+
+        MessageBuilder obj = new MessageBuilder();
+        assertEquals("Please provide a name!", obj.getMessage(" "));
+
+    }
+
 }
