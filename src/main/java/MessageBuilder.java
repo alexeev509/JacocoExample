@@ -17,4 +17,20 @@ public class MessageBuilder {
         }
         return result.toString();
     }
+
+    void choise() {
+        int i = 1;
+        switch (i) {
+            case 1:
+                i += 1;
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
+    }
+
 }
